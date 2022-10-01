@@ -13,12 +13,27 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--text-color);
+  background-color: var(--white-bg-color);
+  letter-spacing: 0.01em;
 }
 .link-normalize {
   text-decoration: none;
 }
 .list-normalize {
   list-style-type: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .nav-link.current-page {
   color: var(--active-accent-color);
@@ -72,6 +87,7 @@ body {
   color: var(--white-accent-color);
 }
 .hero-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
@@ -88,9 +104,8 @@ body {
 .features {
   background: var(--white-bg-color);
 }
-.features-main-title {
-}
 .features-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -175,6 +190,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-color);
   background-color: var(--grey-bg-color);
+  cursor: pointer;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
